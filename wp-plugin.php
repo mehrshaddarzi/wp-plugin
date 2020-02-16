@@ -17,14 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class WP_PLUGIN {
 
-	/*
-	|--------------------------------------------------------------------------
-	| Plugin ENVIRONMENT
-	|--------------------------------------------------------------------------
-	|
-	| This array of class aliases will be registered when this application
-	|
-	*/
 	public static $ENVIRONMENT = 'development';
 
 	/**
@@ -61,14 +53,7 @@ class WP_PLUGIN {
 	 */
 	public static $option = array( 'wp_plugin_email_opt', 'WP_PLUGIN_opt' );
 
-	/*
-	|--------------------------------------------------------------------------
-	| Autoloaded Service Providers
-	|--------------------------------------------------------------------------
-	|
-	| The service providers listed here will be automatically loaded on the request to your Plugin.
-	|
-	*/
+	// Autoloaded Service Providers
 	public static $providers = array(
 		'admin\Settings',
 		'admin\Admin',
